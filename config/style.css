@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Nav*/
+
+.menuNav{
+    background-color: blue;
+    padding: 5px;
+}
+
+.menuNav ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menuNav ul li{
+    list-style: none;
+    font-size: 20px;
+    color: white;
+}
+
+.menuNav ul li:hover{
+    color: black;
+}
+
+/*Marketing*/
+.marketing{
+    background-color: rgb(228, 65, 192);
+    text-align: center;
+    height: 200px;
+    padding: 5px;
+}
+
+h1{
+    color: red;
+}
+
+/*Produtos*/
+
+h2{
+    text-align: center;
+}
+
+.produtos-wrapper{
+    width: 250px;
+    height: 100px;
+    display: flex;
+    margin-left: 117px;
+    margin-top: 70px;
+    margin-right: auto;
+}
+
+.produto2 {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.adicionaRetiraProduto{
+    display: flex;
+    justify-content: center;
+}
+
+.resultadoProduto{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/*Contato*/
+
+.contato-wrapper{
+
+}
+
+.contato{
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+}
+
