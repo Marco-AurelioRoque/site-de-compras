@@ -3,45 +3,31 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(233, 233, 233);
 }
 
 /*Nav*/
 
 .menuNav{
-    background-color: blue;
     padding: 5px;
 }
 
 .menuNav ul{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
-.menuNav ul li{
-    list-style: none;
-    font-size: 20px;
-    color: white;
-}
-
-.menuNav ul li:hover{
-    color: black;
-}
-
-/*Marketing*/
-.marketing{
-    background-color: rgb(228, 65, 192);
-    text-align: center;
-    height: 200px;
-    padding: 5px;
-}
-
-h1{
-    color: red;
+.menuNav ul button{
+    background-color: red;
+    box-shadow: 1px 1px 5px rgb(163, 6, 6);
+    width: 110px;
+    height: 40px;
+    cursor: pointer;
 }
 
 /*Produtos*/
 
-h2{
+h1, h2{
     text-align: center;
 }
 
@@ -49,35 +35,40 @@ h2{
     width: 250px;
     height: 100px;
     display: flex;
-    margin-left: 117px;
-    margin-top: 70px;
+    justify-content: space-around;
+    margin-left: auto;
     margin-right: auto;
+    margin-top: 10%;
 }
 
-.produto2 {
-    margin-left: 200px;
-    margin-right: 200px;
+section{
+    text-align: center;
+    
 }
 
-.adicionaRetiraProduto{
-    display: flex;
-    justify-content: center;
+div{
+    border: 3px solid rgba(255, 255, 255, 0.363);
+    padding: 30px;
 }
 
-.resultadoProduto{
-    margin-left: 10px;
-    margin-right: 10px;
+.detalhes{
+    background-color: rgb(188, 188, 255);
+    margin-top: 20px;
+    width: 110px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.detalhes:hover{
+    background-color: rgb(170, 170, 243);
+}
+
+.produto2{
+    margin-left: 250px;
+    margin-right: 250px;
 }
 
 /*Contato*/
 
-.contato-wrapper{
 
-}
-
-.contato{
-    text-align: center;
-    display: flex;
-    justify-content: flex-end;
-}
-
+/*Sobre*/
