@@ -4,6 +4,8 @@ body{
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(233, 233, 233);
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 /*Nav*/
@@ -79,6 +81,23 @@ section{
     padding: 10px;
     position: absolute;
     display: none;
+    animation: transitionModal;
+    animation-duration: 800ms;
+}
+/*Modal transition 1*/
+@keyframes transitionModal{
+    0%{
+        opacity: 10%;
+    }
+
+    25%{
+        opacity: 25;
+    }
+
+    50%{
+        opacity: 50;
+    }
+
 }
 
 /*Produto 2 Modal*/
@@ -91,6 +110,23 @@ section{
     padding: 10px;
     position: absolute;
     display: none;
+    animation: transitionModal2;
+    animation-duration: 800ms;
+}
+/*Modal transition 2*/
+@keyframes transitionModal2{
+    0%{
+        opacity: 10%;
+    }
+
+    25%{
+        opacity: 25;
+    }
+
+    50%{
+        opacity: 50;
+    }
+
 }
 
 /*Produto 3 Modal*/
@@ -103,7 +139,25 @@ section{
     padding: 10px;
     position: absolute;
     display: none;
+    animation: transitionModal3;
+    animation-duration: 800ms;
 }
+/*Modal trasition 3*/
+@keyframes transitionModal3{
+    0%{
+        opacity: 10;
+    }
+
+    25%{
+        opacity: 25;
+    }
+
+    50%{
+        opacity: 50;
+    }
+
+}
+
 
 /*Outros elementos MODAL*/
 .modal{
@@ -132,7 +186,9 @@ span{
     cursor: pointer;
 }
 
+
 /*Contato*/
 
 
 /*Sobre*/
+
