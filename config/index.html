@@ -4,111 +4,101 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/68c6222e56.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>SuperMarket</title>
 </head>
 <body>
-
-    <!--Nav-->
-    <nav class="menuNav">
-        <ul>
-            <button class="carrinhoCompras" onclick="carrinhoProdutos()">Carrinho $0,00</button>
-        </ul>
-    </nav>
-
-    <!--Produtos-->
-    <h1>Produtos</h1>
-
-    <main class="produtos-wrapper">
-
-        <!--Produto 1-->
-
-        <section class="produto1">
-            <div class="informacoes">
-                <img src="https://cdn.pixabay.com/photo/2013/07/12/18/39/smartphone-153650__340.png" alt="Celular Motorola" width="150" height="200">
-                <hr>
-                <button class="detalhes" onclick="detalhesProduto1()">Detalhes</button>
+   <section class="models">
+       <div class="models-item">
+           <a href="">
+               <div class="models-item-img">
+                   <img src="" alt="">
+               </div>
+               <div class="models-item-add">
+                   Detalhes
+               </div>
+           </a>
+            <div class="models-item-price">R$1200</div>
+            <div class="models-item-name">---</div>
+            <div class="models-item-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+       </div>
+       <div class="cart-item">
+            <img src="" alt="">
+            <div class="cart-item-quantarea">
+                <button class="cart-item-btnmenos">-</button>
+                <div class="cart-item-quant">1</div>
+                <button class="cart-item-btnmais">+</button>
             </div>
-        </section>
-
-        <!--Modal Produto 1-->
-
-        <section class="modal-wrapper">
-            <img src="https://th.bing.com/th/id/Rebf0c4c445785bb8fa1910924e709cef?rik=Gw98%2fvX%2fiKB01A&pid=ImgRaw" alt="FechaModal" width="20px" height="20px" class="fechaModal" onclick="fechaModal1()">
-            <h1>Galaxy A01 - samsung</h1>
-            <div class="modal">
-               
-                <img src="https://cdn.pixabay.com/photo/2013/07/12/18/39/smartphone-153650__340.png" alt="Celular Motorola" width="150" height="220" class="imagemModal">
-
-                <p class="paragrafoInformativo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi accusamus sunt animi nulla saepe porro exercitationem, cum esse excepturi, voluptas reiciendis maxime aliquid deserunt earum veniam facere illo dolorum voluptatum? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, distinctio explicabo quae optio esse, obcaecati fuga hic ab dolor perspiciatis consequatur quasi asperiores ex? Quasi nulla reprehenderit tenetur omnis nisi! <br> <span class="precoProdutos">PREÇO:<span class="precoProdutoNaTela">$2000</span></span> </p>
-
-            </div>
-            <input type="number" name="quantidade" class="quantidade" placeholder="Quantidade:">
-                
-            <button class="adicionarCarrinho" onclick="adicionarProduto()">Adicionar no carrinho</button>
-
-        </section>
-
-
-        <!--================================================================================-->
-
-        <!--Produto 2-->
-
-        <section class="produto2">
-            <div class="informacoes">
-                <img src="https://cdn.pixabay.com/photo/2012/04/13/17/00/lcd-32872_960_720.png" alt="Computador" width="150" height="200">
-                <hr>
-                <button class="detalhes" onclick="detalhesProduto2()">Detalhes</button>
-            </div>
-        </section>
-
-          <!--Modal Produto 2-->
-
-          <section class="modal-wrapper2">
-            <img src="https://th.bing.com/th/id/Rebf0c4c445785bb8fa1910924e709cef?rik=Gw98%2fvX%2fiKB01A&pid=ImgRaw" alt="FechaModal" width="20px" height="20px" class="fechaModal" onclick="fechaModal2()">
-            <h1>Computador - samsung</h1>
-            <div class="modal">
-               
-                <img src="https://cdn.pixabay.com/photo/2012/04/13/17/00/lcd-32872_960_720.png" alt="Computador" width="150" height="220" class="imagemModal">
-
-                <p class="paragrafoInformativo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi accusamus sunt animi nulla saepe porro exercitationem, cum esse excepturi, voluptas reiciendis maxime aliquid deserunt earum veniam facere illo dolorum voluptatum? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, distinctio explicabo quae optio esse, obcaecati fuga hic ab dolor perspiciatis consequatur quasi asperiores ex? Quasi nulla reprehenderit tenetur omnis nisi! <br> <span class="precoProdutos">PREÇO:<span class="precoProdutoNaTela2">$5200</span></span></p>
-
-            </div>
-            <input type="number" name="quantidade" class="quantidade2" placeholder="Quantidade:">
-                
-            <button class="adicionarCarrinho" onclick="adicionarProduto2()">Adicionar no carrinho</button>
-        </section>
-
-        <!--================================================================================-->
-
-        <!--Produto 3-->
-        <section class="produto3">
-            <div class="informacoes">
-                <img src="https://cdn.pixabay.com/photo/2016/10/05/17/17/tablet-1717178__340.png" alt="Tablet" width="150" height="200">
-                <hr>
-                <button class="detalhes" onclick="detalhesProduto3()">Detalhes</button>
-            </div>
-        </section>
-
-          <!--Modal Produto 3-->
-
-          <section class="modal-wrapper3">
-            <img src="https://th.bing.com/th/id/Rebf0c4c445785bb8fa1910924e709cef?rik=Gw98%2fvX%2fiKB01A&pid=ImgRaw" alt="FechaModal" width="20px" height="20px" class="fechaModal" onclick="fechaModal3()">
-            <h1>Tablet - samsung</h1>
-            <div class="modal">
-               
-                <img src="https://cdn.pixabay.com/photo/2016/10/05/17/17/tablet-1717178__340.png" alt="Tablet" width="150" height="220" class="imagemModal">
-
-                <p class="paragrafoInformativo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi accusamus sunt animi nulla saepe porro exercitationem, cum esse excepturi, voluptas reiciendis maxime aliquid deserunt earum veniam facere illo dolorum voluptatum? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, distinctio explicabo quae optio esse, obcaecati fuga hic ab dolor perspiciatis consequatur quasi asperiores ex? Quasi nulla reprehenderit tenetur omnis nisi!  <br> <span class="precoProdutos">PREÇO:<span class="precoProdutoNaTela3">$2500</span></span></p>
-
-            </div>
-            <input type="number" name="quantidade" class="quantidade3" placeholder="Quantidade:">
-                
-            <button class="adicionarCarrinho" onclick="adicionarProduto3()">Adicionar no carrinho</button>
-        </section>
-
+       </div>
+   </section>
+   <header>
+       <div class="menu-openner">
+           <span>0</span>
+           <span class="material-icons"><i class="fas fa-shopping-cart"></i></span>
+       </div>
+    </header>
+    <main>
+        <h1>Produtos</h1>
+        <div class="modelo-area">
+        </div>
     </main>
+    <aside>
+        <div class="cart-area">
+            <div class="menu-closer">
+                <i class="far fa-times-circle"></i>
+            </div>
+            <h1>Seus produtos</h1>
+            <div class="cart"></div>
+            <div class="cart-details">
+                <div class="cart-totalitem subtotal">
+                    <span>SubTotal</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart-totalitem desconto">
+                    <span>Desconto (-10%)</span>
+                </div>
+                <div class="cart-finalizar">
+                    <span>Finalizar Compra</span>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <section class="modelsWindowArea">
+        <div class="modelsWindowsBody">
+            <div class="modelsInfo-cancelMobileButton">Voltar</div>
+            <div class="modelsBig">
+                <img src="" alt="">
+            </div>
+            <div class="modelsInfo">
+                <h1>--</h1>
+                <div class="modelsInfo-desc">--</div>
+                <div class="modelsInfo-sizearea">
+                    <div class="modelsInfo-sector">Escala</div>
+                    <div class="modelsInfo-sizes">
+                        <div data-key="0" class="modelsInfo-size">1/72<span>--</span></div>
+                        <div data-key="1" class="modelsInfo-size">1/48<span>--</span></div>
+                        <div data-key="2" class="modelsInfo-size selected">1/32<span>--</span></div>
+                    </div>
+                </div>
+                <div class="modelsInfo-pricearea">
+                    <div class="modelsInfo-sector">Preço</div>
+                    <div class="modelsInfo-price">
+                        <div class="modelsInfo-actualPrice">R$ --</div>
+                        <div class="modelsInfo-quantarea">
+                            <button class="modelsInfo-quantmenos">-</button>
+                            <div class="modelsInfo-quant">1</div>
+                            <button class="modelsInfo-quantmais">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modelsInfo-addButton">Adicionar ao carrinho</div>
+                <div class="modelsInfo-cancelButton">Cancelar</div>
+            </div>
+        </div>
+    </section>
 
-    <script src="script.js"></script>
+    <script src="js/models.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

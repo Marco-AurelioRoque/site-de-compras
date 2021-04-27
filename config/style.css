@@ -1,194 +1,72 @@
-body{
-    margin: 0;
-    padding: 0;
+*{
     box-sizing: border-box;
+}
+
+body{
+    background-color: #eee;
+    font-size: 15px;
+    display: flex;
+    margin: 0;
+    min-height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(233, 233, 233);
-    overflow-y: hidden;
+}
+
+.models{
+    display: none;
+}
+
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 50px;
+    background-color: #399ADE;
+    display: block;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu-openner{
+    margin-right: 15px;
+    font-size: 25px;
+    background-color: #A9BCFF;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+.menu-openner span{
+    margin-right: 10px;
+}
+
+.menu-closer{
+    width: 32px;
+    height: 32px;
+    display: none;
+    font-size: 30px;
+}
+
+aside{
+    background-color: #9CCBE6;
+    width: 0vw;
+    font-family: Helvetica, sans-serif;
+    transition: all ease .2s;
     overflow-x: hidden;
 }
 
-/*Nav*/
-
-.menuNav{
-    padding: 5px;
+aside.show{
+    width: 30vw;
 }
 
-.menuNav ul{
-    display: flex;
-    justify-content: flex-end;
+.cart-area{
+    padding: 20px;
 }
 
-.menuNav ul button{
-    background-color: red;
-    box-shadow: 1px 1px 5px rgb(163, 6, 6);
-    width: 110px;
-    height: 40px;
-    cursor: pointer;
+main{
+    flex: 1;
+    padding: 20px;
 }
 
-/*Produtos*/
-
-h1, h2{
-    text-align: center;
+h1{
+    font-family: Helvetica, sans-serif;
 }
-
-.produtos-wrapper{
-    width: 250px;
-    height: 100px;
-    display: flex;
-    justify-content: space-around;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10%;
-}
-
-section{
-    text-align: center;
-}
-
-.informacoes{
-    border: 3px solid rgba(255, 255, 255, 0.363);
-    padding: 30px;
-}
-
-.detalhes{
-    background-color: rgb(188, 188, 255);
-    margin-top: 20px;
-    width: 110px;
-    height: 40px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-.detalhes:hover{
-    background-color: rgb(170, 170, 243);
-}
-
-.produto2{
-    margin-left: 250px;
-    margin-right: 250px;
-}
-
-/*Modal Produtos*/
-
-/*Produto 1 Modal*/
-.modal-wrapper{
-    background-color:rgb(177, 177, 177) ;
-    width: 700px;
-    height: 350px;
-    border: 2px solid black;
-    bottom: 50px;
-    padding: 10px;
-    position: absolute;
-    display: none;
-    animation: transitionModal;
-    animation-duration: 800ms;
-}
-/*Modal transition 1*/
-@keyframes transitionModal{
-    0%{
-        opacity: 10%;
-    }
-
-    25%{
-        opacity: 25;
-    }
-
-    50%{
-        opacity: 50;
-    }
-
-}
-
-/*Produto 2 Modal*/
-.modal-wrapper2{
-    background-color:rgb(177, 177, 177) ;
-    width: 700px;
-    height: 350px;
-    border: 2px solid black;
-    bottom: 50px;
-    padding: 10px;
-    position: absolute;
-    display: none;
-    animation: transitionModal2;
-    animation-duration: 800ms;
-}
-/*Modal transition 2*/
-@keyframes transitionModal2{
-    0%{
-        opacity: 10%;
-    }
-
-    25%{
-        opacity: 25;
-    }
-
-    50%{
-        opacity: 50;
-    }
-
-}
-
-/*Produto 3 Modal*/
-.modal-wrapper3{
-    background-color:rgb(177, 177, 177) ;
-    width: 700px;
-    height: 350px;
-    border: 2px solid black;
-    bottom: 50px;
-    padding: 10px;
-    position: absolute;
-    display: none;
-    animation: transitionModal3;
-    animation-duration: 800ms;
-}
-/*Modal trasition 3*/
-@keyframes transitionModal3{
-    0%{
-        opacity: 10;
-    }
-
-    25%{
-        opacity: 25;
-    }
-
-    50%{
-        opacity: 50;
-    }
-
-}
-
-
-/*Outros elementos MODAL*/
-.modal{
-    display: flex;
-}
-
-.imagemModal{
-    margin-left: 20px;
-}
-
-span{
-    margin-top: 30px;
-    font-size: 40px;
-}
-
-.adicionarCarrinho{
-    background-color: rgb(51, 255, 0);
-    cursor: pointer;
-}
-
-.adicionarCarrinho:hover{
-    background-color: rgb(56, 240, 10);
-}
-
-.fechaModal{
-    cursor: pointer;
-}
-
-
-/*Contato*/
-
-
-/*Sobre*/
-

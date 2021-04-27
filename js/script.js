@@ -38,10 +38,6 @@ function adicionarProduto3(){
     document.querySelector(".precoProdutoNaTela3"). innerHTML = quantidaDoProduto3
 }
 
-//Carrinho Total
-function carrinhoProdutos(){
-    
-}
 
 //Fecha Modais
 
@@ -57,7 +53,7 @@ function fechaModal3(){
     document.querySelector(".modal-wrapper3").style.display = "none"
 }
 
-//Detalhes produtos
+//Abre modais
 
 function detalhesProduto1(){
     document.querySelector(".modal-wrapper").style.display = "block"
