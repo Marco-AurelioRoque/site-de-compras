@@ -9,96 +9,49 @@
     <title>SuperMarket</title>
 </head>
 <body>
-   <section class="models">
-       <div class="models-item">
-           <a href="">
-               <div class="models-item-img">
-                   <img src="" alt="">
-               </div>
-               <div class="models-item-add">
-                   Detalhes
-               </div>
-           </a>
-            <div class="models-item-price">R$1200</div>
-            <div class="models-item-name">---</div>
-            <div class="models-item-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
-       </div>
-       <div class="cart-item">
-            <img src="" alt="">
-            <div class="cart-item-quantarea">
-                <button class="cart-item-btnmenos">-</button>
-                <div class="cart-item-quant">1</div>
-                <button class="cart-item-btnmais">+</button>
-            </div>
-       </div>
-   </section>
-   <header>
-       <div class="menu-openner">
-           <span>0</span>
-           <span class="material-icons"><i class="fas fa-shopping-cart"></i></span>
-       </div>
-    </header>
     <main>
-        <h1>Produtos</h1>
-        <div class="modelo-area">
-        </div>
-    </main>
-    <aside>
-        <div class="cart-area">
-            <div class="menu-closer">
-                <i class="far fa-times-circle"></i>
-            </div>
-            <h1>Seus produtos</h1>
-            <div class="cart"></div>
-            <div class="cart-details">
-                <div class="cart-totalitem subtotal">
-                    <span>SubTotal</span>
-                    <span>R$ --</span>
-                </div>
-                <div class="cart-totalitem desconto">
-                    <span>Desconto (-10%)</span>
-                </div>
-                <div class="cart-finalizar">
-                    <span>Finalizar Compra</span>
-                </div>
-            </div>
-        </div>
-    </aside>
-    <section class="modelsWindowArea">
-        <div class="modelsWindowsBody">
-            <div class="modelsInfo-cancelMobileButton">Voltar</div>
-            <div class="modelsBig">
-                <img src="" alt="">
-            </div>
-            <div class="modelsInfo">
-                <h1>--</h1>
-                <div class="modelsInfo-desc">--</div>
-                <div class="modelsInfo-sizearea">
-                    <div class="modelsInfo-sector">Escala</div>
-                    <div class="modelsInfo-sizes">
-                        <div data-key="0" class="modelsInfo-size">1/72<span>--</span></div>
-                        <div data-key="1" class="modelsInfo-size">1/48<span>--</span></div>
-                        <div data-key="2" class="modelsInfo-size selected">1/32<span>--</span></div>
-                    </div>
-                </div>
-                <div class="modelsInfo-pricearea">
-                    <div class="modelsInfo-sector">Preço</div>
-                    <div class="modelsInfo-price">
-                        <div class="modelsInfo-actualPrice">R$ --</div>
-                        <div class="modelsInfo-quantarea">
-                            <button class="modelsInfo-quantmenos">-</button>
-                            <div class="modelsInfo-quant">1</div>
-                            <button class="modelsInfo-quantmais">+</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="modelsInfo-addButton">Adicionar ao carrinho</div>
-                <div class="modelsInfo-cancelButton">Cancelar</div>
-            </div>
-        </div>
-    </section>
+        <section class="models">
+            <h3>X-BURGUER</h3>
+            <div class="models-item">
+                <a href="#">
+                    <img src="https://cdn.pixabay.com/photo/2015/04/20/13/25/burgers-731298__340.jpg" alt="X-BURGUER" width="277" height="170">
+                </a>
 
-    <script src="js/models.js"></script>
+                <button class="models-item-details">Detalhes</button>
+                
+                <div class="models-item-desc">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <section class="modal-models">
+        <div class="modal-img">
+            <img src="" alt="">
+        </div>
+        <div class="modal-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum mollitia, assumenda nihil quis fugit sit dignissimos, veniam quam iusto quasi alias iure sequi, ad cupiditate pariatur nostrum cumque similique necessitatibus.</div>
+        <div class="modal-qt">
+            <input type="number" name="numberQuantidade" class="numberqt" placeholder="Quantidade">
+        </div>
+        <div class="modal-add">Adicionar ao carrinho</div>
+        <div class="modal-cancel">Cancelar</div>
+    </section>
+    <aside class="bar-cart">
+        <div class="cart">
+            <span class="cart-produtos">Seus produtos</span>
+        </div>
+        <div class="cart-btn">
+            <button class="cart-btn-aumenta-qt">+</button>
+            <span class="cart-btn-qt">0</span>
+            <button class="cart-btn-diminui-qt">-</button>
+        </div>
+        <div class="cart-total">
+            <span class="desconto">0</span>
+            <span class="total">0</span>
+        </div>
+        <div class="cart-final">Finalizar compra</div>
+    </aside>
     <script src="js/script.js"></script>
 </body>
 </html>
