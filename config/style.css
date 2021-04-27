@@ -17,8 +17,6 @@ body{
     padding: 10px;
     width: 300px;
     height: 400px;
-    display: flex;
-    flex-direction: column;
     margin-left: 177%;
     margin-top: 50%;
 }
@@ -34,8 +32,6 @@ h3{
 
 a{
     text-decoration: none;
-    display: flex;
-    margin-left: auto;
 }
 
 .models-item-details{
@@ -47,14 +43,9 @@ a{
     border-radius: 5px;
     width: 150px;
     height: 40px;
-    flex-direction: column;
     margin-top: 65%;
     margin-left: 23%;
     margin-bottom: 20px;
-    cursor: pointer;
-}
-.models-item-details:hover{
-    background-color: rgb(24, 167, 167);
 }
 
 .models-item-desc{
