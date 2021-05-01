@@ -1,68 +1,26 @@
-//Pega quantidade
+//Adiciona e remove produto
 
-//Quantidade Produto 1
-function adicionarProduto(){
-    var quantidaDoProduto1 = document.querySelector(".quantidade").value
-    var precoAtual = document.querySelector(".precoProdutos")
 
-    precoAtual = 2000
+function addProduto(){
+    //Sistema de add e remove
+    var produtoAdicionado = document.querySelector(".quantidadeProduto").value
+    var produtoAdicionadoStatus = document.querySelector(".quantidadeProduto").value
+    
+    var valorAtual = 10
 
-    quantidaDoProduto1 = precoAtual * quantidaDoProduto1
+    var produtoAdicionado = valorAtual * produtoAdicionado;
 
-    document.querySelector(".precoProdutoNaTela"). innerHTML = quantidaDoProduto1
+    var resultadoDoProduto = document.querySelector(".resultadoProduto").innerHTML = "Preço: " + produtoAdicionado + ",00";
+
+   //Status
+    document.querySelector(".statusEnvioSucesso").innerHTML = produtoAdicionadoStatus + " Produtos adicionados ao carrinho"
+    
+    document.querySelector(".statusEnvioSucesso").style.display = "block"
+
+    //Resultado no carrinho
+    document.querySelector(".resultado-total").innerHTML = "R$ " + produtoAdicionado + ",00"
+
 }
 
 
-//Quantidade Produto 2
-function adicionarProduto2(){
-    var quantidaDoProduto2 = document.querySelector(".quantidade2").value
-    var precoAtual = document.querySelector(".precoProdutos")
 
-    precoAtual = 5200
-
-    quantidaDoProduto2 = precoAtual * quantidaDoProduto2
-
-    document.querySelector(".precoProdutoNaTela2"). innerHTML = quantidaDoProduto2
-}
-
-
-//Quantidade Produto 3
-function adicionarProduto3(){
-    var quantidaDoProduto3 = document.querySelector(".quantidade3").value
-    var precoAtual = document.querySelector(".precoProdutos")
-
-    precoAtual = 2500
-
-    quantidaDoProduto3 = precoAtual * quantidaDoProduto3
-
-    document.querySelector(".precoProdutoNaTela3"). innerHTML = quantidaDoProduto3
-}
-
-
-//Fecha Modais
-
-function fechaModal1(){
-    document.querySelector(".modal-wrapper").style.display = "none"
-}
-
-function fechaModal2(){
-    document.querySelector(".modal-wrapper2").style.display = "none"
-}
-
-function fechaModal3(){
-    document.querySelector(".modal-wrapper3").style.display = "none"
-}
-
-//Abre modais
-
-function detalhesProduto1(){
-    document.querySelector(".modal-wrapper").style.display = "block"
-}
-
-function detalhesProduto2(){
-    document.querySelector(".modal-wrapper2").style.display = "block"
-}
-
-function detalhesProduto3(){
-    document.querySelector(".modal-wrapper3").style.display = "block"
-}

@@ -9,49 +9,36 @@
     <title>SuperMarket</title>
 </head>
 <body>
-    <main>
-        <section class="models">
-            <h3>X-BURGUER</h3>
-            <div class="models-item">
-                    <a href="#">
-                        <img src="https://cdn.pixabay.com/photo/2015/04/20/13/25/burgers-731298__340.jpg" alt="X-BURGUER" width="277" height="170">
-                    </a>
 
-                    <button class="models-item-details">Detalhes</button>
-                
-                    <div class="models-item-desc">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    </div>
-                
+    <div class="statusEnvio">
+        <h3 class="statusEnvioSucesso"></h3>
+    </div>
+
+    <header>
+        <h3 class="cart">Carrinho</h3>
+        <h3 class="resultado-total">R$ 0</h3>
+    </header>
+
+    <main>
+        <section class="produtoFinal">
+            <div class="produto">
+                <h1>X-BURGUER</h1>
+                <div class="produto-img">
+                    <img src="https://cdn.pixabay.com/photo/2020/12/13/22/48/hamburguer-5829560__340.jpg" width="250" height="200" alt="X-BURGUER">
+                </div>
+
+                <div class="btn-add-remove">
+                    <span class="resultadoProduto">Preço: 10,00</span>
+                    <br>
+                    <br>
+                    <label for="quantidade">Quantidade:</label>
+                    <input type="number" name="quantidade" class="quantidadeProduto">
+                </div>
+
+                <button class="btn-add" onclick="addProduto()">Adicionar ao carrinho</button>
             </div>
         </section>
     </main>
-    <section class="modal-models">
-        <div class="modal-img">
-            <img src="" alt="">
-        </div>
-        <div class="modal-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum mollitia, assumenda nihil quis fugit sit dignissimos, veniam quam iusto quasi alias iure sequi, ad cupiditate pariatur nostrum cumque similique necessitatibus.</div>
-        <div class="modal-qt">
-            <input type="number" name="numberQuantidade" class="numberqt" placeholder="Quantidade">
-        </div>
-        <div class="modal-add">Adicionar ao carrinho</div>
-        <div class="modal-cancel">Cancelar</div>
-    </section>
-    <aside class="bar-cart">
-        <div class="cart">
-            <span class="cart-produtos">Seus produtos</span>
-        </div>
-        <div class="cart-btn">
-            <button class="cart-btn-aumenta-qt">+</button>
-            <span class="cart-btn-qt">0</span>
-            <button class="cart-btn-diminui-qt">-</button>
-        </div>
-        <div class="cart-total">
-            <span class="desconto">0</span>
-            <span class="total">0</span>
-        </div>
-        <div class="cart-final">Finalizar compra</div>
-    </aside>
-    <script src="js/script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>

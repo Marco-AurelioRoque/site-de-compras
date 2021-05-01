@@ -5,52 +5,94 @@
 body{
     background-color: #eee;
     font-size: 15px;
-    display: flex;
     margin: 0;
-    min-height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.models{
-    border: 3px solid black;
-    border-radius: 5px;
-    padding: 10px;
-    width: 300px;
-    height: 400px;
-    margin-left: 177%;
-    margin-top: 50%;
-}
+/*Status envio*/
 
-img{
+.statusEnvioSucesso{
     position: absolute;
-    bottom: 280px;
+    left: 39%;
+    background-color: greenyellow;
+    padding: 4px;
+    border: 1px solid black;
+    display: none;
+    animation: animateStatus;
+    animation-duration: 500ms;
 }
 
-h3{
+@keyframes animateStatus {
+    0%{
+        opacity: 0;
+        top: -15px;
+    }
+
+    100%{
+        opacity: 1;
+        top: 0px;
+    }
+}
+
+
+/*Header - cart*/
+header{
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+    background-color: rgb(189, 189, 189);
+}
+
+.cart{
+    margin-right: 10px;
+}
+
+/*Produto*/
+
+.produtoFinal{
     text-align: center;
+    margin-top: 7%;
 }
 
-a{
-    text-decoration: none;
-}
-
-.models-item-details{
-    text-align:center;
-    background-color: #1EE;
-    color: white;
-    font-size: 32px;
+.produto{
+    box-shadow: 1px 1px 10px rgb(167, 167, 167);
+    border-radius: 10px;
     border: 2px solid black;
-    border-radius: 5px;
-    width: 150px;
-    height: 40px;
-    margin-top: 65%;
-    margin-left: 23%;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+.produto-img{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.btn-add-remove{
     margin-bottom: 20px;
 }
 
-.models-item-desc{
-    margin-left: 15%;
-    text-align: center;
-    max-width: 70%;
+.quantidadeProduto{
+    width: 40px;
+}
+
+.resultadoProduto{
     font-size: 20px;
+    font-weight: bold;
+}
+
+label{
+    font-size: 20px;
+}
+
+.btn-add{
+    width: 220px;
+    height: 40px;
+    margin-bottom: 20px;
+    background-color: rgb(19, 230, 19);
+    cursor: pointer;
+}
+.btn-add:hover{
+    background-color: rgb(20, 199, 20);
 }
