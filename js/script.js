@@ -1,6 +1,3 @@
-//Adiciona e remove produto
-
-
 function addProduto(){
     //Sistema de add e remove
     var produtoAdicionado = document.querySelector(".quantidadeProduto").value
@@ -9,8 +6,6 @@ function addProduto(){
     var valorAtual = 10
 
     var produtoAdicionado = valorAtual * produtoAdicionado;
-
-    var resultadoDoProduto = document.querySelector(".resultadoProduto").innerHTML = "Preço: " + produtoAdicionado + ",00";
 
    //Status
     document.querySelector(".statusEnvioSucesso").innerHTML = produtoAdicionadoStatus + " Produtos adicionados ao carrinho"
@@ -21,6 +16,5 @@ function addProduto(){
     document.querySelector(".resultado-total").innerHTML = "R$ " + produtoAdicionado + ",00"
 
 }
-
 
 

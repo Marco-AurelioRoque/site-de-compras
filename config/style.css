@@ -49,6 +49,11 @@ header{
 
 /*Produto*/
 
+.produtos{
+    display: flex;
+    justify-content: space-around;
+}
+
 .produtoFinal{
     text-align: center;
     margin-top: 7%;
