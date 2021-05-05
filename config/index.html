@@ -15,11 +15,25 @@
     </div>
 
     <header>
-            <h3 class="cart">Carrinho</h3>
-            <h3 class="resultado-total">R$ 0</h3>
+        <div class="cart">
+            <button class="btn-cart" onclick="abreModalCart()">Carrinho:<span class="resultado-total">R$ 0,00</span></button>  
+        </div>  
     </header>
+    <div class="modalCart">
+        <i class="fas fa-times-circle" onclick="fechaModal()"></i>
+        <div class="content-cart">
+            <h2 style="text-align: center; margin-bottom: 50px;">Carrinho</h2>
+            <hr>
+            <h3>Produtos: <span class="resultado-produtos">a</span> </h3> 
+            <hr>
+            <h3>Sub-Total: <span class="resultado-sub">a</span> </h3> 
+            <hr>
+            <h3>Total: <span class="resultado-total-produto">a</span> </h3> 
+        </div>
+    </div>
 
     <main class="produtos">
+        <h1 style="position: absolute;">Produtos</h1>
         <section class="produtoFinal">
             <div class="produto">
                 <h1 class="tituloProduto">X-BURGUER</h1>

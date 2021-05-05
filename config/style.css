@@ -38,15 +38,52 @@ body{
 /*Header - cart*/
 header{
     display: flex;
+    height: 70px;
     justify-content: flex-end;
-    padding: 5px;
+    align-items: center;
+    padding: 10px;
     background-color: rgb(189, 189, 189);
 }
 
-.cart{
-    margin-right: 10px;
+.btn-cart{
+    font-size: 20px;
+    background-color: rgb(46, 154, 255);
+    color: white;
+    cursor: pointer;
+    margin-right: 35px;
+}
+.btn-cart:hover{
+    background-color: rgb(45, 144, 236);
 }
 
+.modalCart{
+    display: none;
+    position: absolute;
+    border: 2px solid black;
+    right: 1px;
+    width: 290px;
+    height: 587px;
+    background-color: rgb(125, 214, 255);
+    transition: all ease-in-out;
+}
+
+/*Resultado produtos cart*/
+.resultado-produtos{
+    margin-left: 60px;
+}
+
+
+.resultado-sub{
+    margin-left: 150px;
+}
+
+.resultado-total-produto{
+    margin-left: 190px;
+}
+
+i{
+    cursor: pointer;
+}
 /*Produto*/
 
 .produtos{
