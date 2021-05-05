@@ -17,23 +17,33 @@ function addProduto(){
     var produtoAdicionado = valorAtual * produtoAdicionado;
 
    //Status
-    document.querySelector(".statusEnvioSucesso").innerHTML = produtoAdicionadoStatus + " Produtos adicionados ao carrinho"
+    document.querySelector(".statusEnvioSucesso").innerHTML = "Produtos adicionados ao carrinho"
     
     document.querySelector(".statusEnvioSucesso").style.display = "block"
 
     //Resultado no carrinho
-    document.querySelector(".resultado-total").innerHTML = "R$ " + produtoAdicionado + ",00"
+    document.querySelector(".resultado-total").innerHTML = " R$ " + produtoAdicionado + ",00"
     
     //resultado produtos cart
 
-    var titulo = document.querySelector(".tituloProduto").innerHTML = " X-BURGUER"
-
-    document.querySelector(".resultado-produtos").innerHTML = produtoAdicionadoStatus + titulo
-    document.querySelector(".resultado-sub").innerHTML = produtoAdicionado + "," + 000
-    document.querySelector(".resultado-total-produto").innerHTML = produtoAdicionado + "," + 000
-    
+    document.querySelector(".resultado-produtos").innerHTML = produtoAdicionadoStatus
+    document.querySelector(".resultado-total-produto").innerHTML = produtoAdicionado + ",00"
 
 }
+
+function deletarProduto() {
+    document.querySelector(".resultado-produtos").innerHTML = ""
+    document.querySelector(".resultado-total-produto").innerHTML = ""
+    document.querySelector(".modalCart").style.display = "none"
+    document.querySelector(".resultado-total").innerHTML = " R$ " + "0,00"
+    document.querySelector(".statusEnvioSucesso").style.display = "none"
+}
+
+
+
+
+
+
 
 
 
