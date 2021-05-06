@@ -34,6 +34,28 @@ body{
     }
 }
 
+.statusValorInvalido{
+    position: absolute;
+    left: 39%;
+    background-color: rgb(255, 0, 0);
+    padding: 4px;
+    border: 1px solid black;
+    display: none;
+    animation: animateStatusInvalido;
+    animation-duration: 500ms;
+}
+
+@keyframes animateStatusInvalido {
+    0%{
+        opacity: 0;
+        top: -15px;
+    }
+
+    100%{
+        opacity: 1;
+        top: 0px;
+    }
+}
 
 /*Header - cart*/
 header{
@@ -65,7 +87,6 @@ header{
     height: 587px;
     background-color: rgb(125, 214, 255);
     padding: 5px;
-    transition: all ease-in-out;
 }
 
 /*Resultado produtos cart*/
