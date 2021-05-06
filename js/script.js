@@ -26,6 +26,8 @@ function addProduto(){
         document.querySelector(".statusEnvioSucesso").style.display = "block"
     }
 
+    document.querySelector(".produto-cart-span").innerHTML = "X-BURGUER"
+    
    //Status
     document.querySelector(".statusEnvioSucesso").innerHTML = "Produtos adicionados ao carrinho"
     
@@ -43,6 +45,7 @@ function addProduto(){
 
 //Delete produto
 function deletarProduto() {
+    document.querySelector(".produto-cart-span").innerHTML = ""
     document.querySelector(".resultado-produtos").innerHTML = ""
     document.querySelector(".resultado-total-produto").innerHTML = ""
     document.querySelector(".modalCart").style.display = "none"
