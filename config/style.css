@@ -7,6 +7,7 @@ body{
     font-size: 15px;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
 /*Status envio*/
@@ -78,6 +79,21 @@ header{
     background-color: rgb(45, 144, 236);
 }
 
+.content-cart{
+    animation-name: animationContentCart;
+    animation-duration: 2000ms;
+}
+
+@keyframes animationContentCart {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
 .modalCart{
     display: none;
     position: absolute;
@@ -87,6 +103,18 @@ header{
     height: 587px;
     background-color: rgb(125, 214, 255);
     padding: 5px;
+    animation-name: animationModal;
+    animation-duration: 1000ms;
+}
+
+@keyframes animationModal{
+    0%{
+        width: 0px;
+    }
+
+    100%{
+        width: 290px;
+    }
 }
 
 /*Resultado produtos cart*/
@@ -111,7 +139,7 @@ i{
     height: 50px;
     position: absolute;
     border-radius: 10px;
-    margin-top: 50px;
+    bottom: 10px;
     margin-left: 38px;
     background-color: rgb(0, 255, 21);
     color: rgb(0, 0, 0);
