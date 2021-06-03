@@ -98,6 +98,7 @@ header{
     display: none;
     position: absolute;
     border: 2px solid black;
+    justify-content: center;
     right: 1px;
     width: 290px;
     height: 587px;
@@ -105,6 +106,7 @@ header{
     padding: 5px;
     animation-name: animationModal;
     animation-duration: 1000ms;
+    flex-wrap: wrap;
 }
 
 @keyframes animationModal{
