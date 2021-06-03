@@ -106,7 +106,7 @@ header{
     padding: 5px;
     animation-name: animationModal;
     animation-duration: 1000ms;
-    flex-wrap: wrap;
+
 }
 
 @keyframes animationModal{
@@ -172,8 +172,10 @@ i{
 }
 
 .produtoFinal{
+    display: flex;
     text-align: center;
     margin-top: 7%;
+    flex-wrap: wrap;
 }
 
 .produto{
