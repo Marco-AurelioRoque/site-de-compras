@@ -20,11 +20,9 @@ function addProduto(){
 
     //Validação
     if(produtoAdicionadoFinal < 1) {
-
-        setTimeout(() => {
-            document.querySelector(".statusValorInvalido").innerHTML = "ERROR: Valor invalido, tente outro"
-        }, time);
-
+        
+        document.querySelector(".statusValorInvalido").innerHTML = "ERROR: Valor invalido, tente outro"
+    
         document.querySelector(".statusValorInvalido").style.display = "block"
         document.querySelector(".statusEnvioSucesso").style.display = "none"
         document.querySelector(".produto-cart-span").innerHTML = ""
