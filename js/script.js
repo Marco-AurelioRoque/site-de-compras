@@ -19,10 +19,11 @@ function addProduto(){
     var produtoAdicionadoFinal = valorAtual * produtoAdicionado;
 
     //Validação
-    if(produtoAdicionadoFinal < 1) {
+    function verification() {
         
+    }
+    if(produtoAdicionadoFinal < 1) {
         document.querySelector(".statusValorInvalido").innerHTML = "ERROR: Valor invalido, tente outro"
-    
         document.querySelector(".statusValorInvalido").style.display = "block"
         document.querySelector(".statusEnvioSucesso").style.display = "none"
         document.querySelector(".produto-cart-span").innerHTML = ""
