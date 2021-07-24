@@ -31,7 +31,8 @@ header .first-navBar .first-ul{
 }
 
 header .first-navBar .first-ul div{
-    display: block;
+    display: inline;
+    cursor: pointer;
 }
 header .first-navBar .first-ul div:hover{
     border: 1px solid white;
@@ -39,7 +40,7 @@ header .first-navBar .first-ul div:hover{
 
 header .second-navBar{
     background-color: #232f3e;
-    height: 35px;
+    height: 40px;
     display: flex;
     align-items: center;
 }
@@ -52,7 +53,10 @@ header .second-navBar .second-ul{
 
 header .second-navBar .second-ul div{
     margin-right: 15px;
-    display: inline;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-flex;
+    cursor: pointer;
 }
 header .second-navBar .second-ul div:hover{
     border: 1px solid white;
