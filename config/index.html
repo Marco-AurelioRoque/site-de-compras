@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible">
@@ -10,52 +10,82 @@
 </head>
 <body>
 
-    <div class="statusEnvio">
-        <h3 class="statusEnvioSucesso"></h3>
-        <h3 class="statusValorInvalido"></h3>
-    </div>
-
     <header>
-        <div class="cart">
-            <button class="btn-cart" onclick="abreModalCart()">Carrinho:<span class="resultado-total">R$ 0,00</span></button>  
-        </div>  
+        <nav class="first-navBar">
+            <ul class="first-ul">
+                <div class="logo">
+                    <p><span style="font-size: 27px; font-weight: bold;">Amazônia</span>.com.br</p>
+                </div>
+                <div class="address">
+                    <p><i class="fas fa-map-marker-alt"></i> Selecione seu endereço</p>
+                </div>
+                <div class="search" style="display: flex;">
+                    <div class="category">
+                        <select name="select" id="selectCategory">
+                            <option value="">Todos</option>
+                            <option value="">Todos os departamentos</option>
+                            <option value="">Alexa skills</option>
+                            <option value="">Departamentos e bebidas</option>
+                            <option value="">App's e Jogos</option>
+                            <option value="">Automotivo</option>
+                            <option value="">Bebês</option>
+                            <option value="">Beleza</option>
+                            <option value="">Casa</option>
+                            <option value="">Cozinha</option>
+                        </select>
+                    </div>
+                    <input type="search" name="search" id="searchProduct">
+                    <button id="submitSearch"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="login">
+                    <p>Olá, faça seu login</p>
+                </div>
+                <div class="returns">
+                    <p>Devoluções</p>
+                </div>
+                <div class="cart">
+                    <p><i class="fas fa-cart-plus" style="font-size: 35px;"></i> Carrinho</p>
+                </div>
+            </ul>
+        </nav>
+
+        <nav class="second-navBar">
+            <ul class="second-ul">
+                <div class="menu-all">
+                    <p><i class="fas fa-bars" style="font-size: 20px;"></i> Todos</p>
+                </div>
+                <div class="sell-amazon">
+                    <p>Venda na amazonia</p>
+                </div>
+                <div class="top-sellers">
+                    <p>Mais vendidos</p>
+                </div>
+                <div class="prime">
+                    <p>Prime <i class="fas fa-sort-down"></i></p>
+                    <div class="modal-prime"></div>
+                </div>
+                <div class="releases">
+                    <p>Lançamentos</p>
+                </div>
+                <div class="books">
+                    <p>Livros</p>
+                </div>
+                <div class="service">
+                    <p>Atendimento ao cliente</p>
+                </div>
+                <div class="fashion">
+                    <p>Amazonia Moda</p>
+                </div>
+                <div class="eletronics">
+                    <p>Eletronicos</p>
+                </div>
+                <div class="meet">
+                    <p style="font-size: 18px;">Conheça os <span style="font-size: 20px; font-weight: bold;">AAAA</span></p>
+                </div>
+            </ul>
+        </nav>
     </header>
 
-    <div class="modalCart">
-        <i class="fas fa-times-circle" onclick="fechaModal()"></i>
-        <div class="content-cart">
-            <h2 style="text-align: center; margin-bottom: 50px;">Carrinho</h2>
-            <hr>
-            <h3 class="produto-cart">Produto: <span class="produto-cart-span"></span> </h3>
-            <hr>
-            <h3>Quantidade: <span class="resultado-produtos"></span> </h3> 
-            <hr>
-            <h3>Total: <span class="resultado-total-produto"></span> </h3> 
-
-            <button class="finalizar">Finalizar Compra</button>
-        </div>
-    </div>
-
-    <main class="produtos">
-        <h1 style="position: absolute;">Produtos</h1>
-        <section class="produtoFinal">
-            <div class="produto">
-                <h1 class="tituloProduto">X-BURGUER</h1>
-                <div class="produto-img">
-                    <img src="https://cdn.pixabay.com/photo/2020/12/13/22/48/hamburguer-5829560__340.jpg" width="250" height="200" alt="X-BURGUER">
-                </div>
-                <div class="btn-add-remove">
-                    <span class="resultadoProduto">Preço: 10,00</span>
-                    <br>
-                    <br>
-                    <label for="quantidade">Quantidade:</label>
-                    <input type="number" name="quantidade" class="quantidadeProduto">
-                </div>
-                <button class="btn-add" onclick="addProduto()">Adicionar ao carrinho</button>
-            </div>
-        </section>
-
-    </main>
     <script src="../js/script.js"></script>
 </body>
 </html>
